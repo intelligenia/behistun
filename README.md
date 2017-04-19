@@ -1,7 +1,39 @@
 # behistun
 Behistun is a simple PHP translation manager
 
+# Requirements
+PHP 5.4 and dependencies installed by [composer](https://getcomposer.org/) ([AdoDB](http://adodb.org/dokuwiki/doku.php) and [Twig template system](http://twig.sensiolabs.org/)).
+
 # Installation
+
+## Install from master branch
+
+```json
+{
+     "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "intelligenia/behistun",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/intelligenia/behistun.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "twig/twig": "1.32",
+        "intelligenia/behistun": "1.0"
+    }
+}
+```
+
+## Packagist
+
+Or wait until we upload this package to packagist and you'll be able to do:
 
 ```sh
 composer install
@@ -67,3 +99,10 @@ Where each translation goes. Remember that each translation is identified by the
 // different from the default language (e.g. English if your web is for English-speaking people)
 $translator = new Translator($LANGUAGE);
 ```
+
+# License
+[MIT License](LICENSE).
+
+# Authors
+- First prototype made by Diego J. Romero López at intelligenia (diegoREMOVETHIS@REMOVETHISintelligenia.com)
+
