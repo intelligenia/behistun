@@ -1,0 +1,14 @@
+
+configuration.local.php
+
+.DS_Store
+
+dependences/vendor
+dependences/composer.phar
+
+dependencies/vendor
+dependencies/composer.phar
+
+nbproject
+
+.idea
