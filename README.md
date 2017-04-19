@@ -38,7 +38,7 @@ This text will be translated
 
 The id will be used to identify the block of translatable text when dealing with translations. You should set it to value that helps you recognize easily the block it represents.
 
-## Compile all source texts
+## Compile all source texts from templates
 
 Run this PHP script that will get all the source texts and create a **locales/LANGUAGE_CODE/LC_MESSAGES/** directory in the same directory your templates:
 
@@ -53,10 +53,10 @@ php vendor/intelligenia/behistun/behistun/bin/update_translations.php ~/projects
 ## Translation
 This **locales/LANGUAGE_CODE/LC_MESSAGES/** directory contains two files:
 
-## web.source.php
+### web.source.php
 Original association between translatable ids and source texts.
 
-## web.translation.php
+### web.translation.php
 Where each translation goes. Remember that each translation is identified by the id you used in the translatable tag.
 
 ## Changing language
