@@ -17,6 +17,6 @@
         "twig/twig": "1.24.0"
     },
     "autoload": {
-        "files": ["behistun/init.php"]
+        "files": ["behistun/behistun/init.php"]
     }
 }
