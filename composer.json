@@ -1,0 +1,19 @@
+{
+    "name": "intelligenia/behistun",
+    "type": "library",
+    "description": "A simple translation manager for your PHP application",
+    "keywords": ["translation","manager", "twig"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego J. Romero López",
+            "email": "diego@intelligenia.com",
+            "homepage": "https://www.linkedin.com/in/diegojromerolopez",
+            "role": "Main Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "twig/twig": "1.24.0",
+    }
+}
