@@ -56,3 +56,12 @@ Original association between translatable ids and source texts.
 
 ## web.translation.php
 Where each translation goes. Remember that each translation is identified by the id you used in the translatable tag.
+
+# Changing language
+
+```php
+// Call Translator class with the language code you want to translate the texts
+// this code only should be executed once, when you have a selected language that is
+// different from the default language (e.g. English if your web is for English-speaking people)
+$translator = new Translator($LANGUAGE);
+```
