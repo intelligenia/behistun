@@ -26,7 +26,9 @@ require_once __DIR__ . '/vendor/intelligenia/behistun/behistun/init.php';
 
 # Use
 
-Use the Twig tag 
+## Templates
+
+This package relies on the Twig template system so you will have to use the following Twig tag to mark a block of text as translatable:
 
 ```html
 {% translatable '<id>' %}
@@ -36,7 +38,7 @@ This text will be translated
 
 The id will be used to identify the block of translatable text when dealing with translations. You should set it to value that helps you recognize easily the block it represents.
 
-# Compile all source texts
+## Compile all source texts
 
 Run this PHP script that will get all the source texts and create a **locales/LANGUAGE_CODE/LC_MESSAGES/** directory in the same directory your templates:
 
@@ -48,7 +50,7 @@ For example:
 ```sh
 php vendor/intelligenia/behistun/behistun/bin/update_translations.php ~/projects/my-web/public_html/templates/ en_US
 ```
-# Translation
+## Translation
 This **locales/LANGUAGE_CODE/LC_MESSAGES/** directory contains two files:
 
 ## web.source.php
@@ -57,7 +59,7 @@ Original association between translatable ids and source texts.
 ## web.translation.php
 Where each translation goes. Remember that each translation is identified by the id you used in the translatable tag.
 
-# Changing language
+## Changing language
 
 ```php
 // Call Translator class with the language code you want to translate the texts
