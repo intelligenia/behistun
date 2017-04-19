@@ -2,9 +2,14 @@
 
 require_once __DIR__ . "/../translations_updater.class.php";
 
-
-$AVAILABLE_LANGUAGES = ["en_US"=>true];
-
+if(isset($LANGUAGES)){
+    $AVAILABLE_LANGUAGES = [];
+    foreach($LANGUAGES as $language){
+        $AVAILABLE_LANGUAGES[$language] = true;
+    }
+}else{
+    $AVAILABLE_LANGUAGES = ["en_US"=>true];    
+}
 
 // Command line arguments
 if(!isset($argv) or !isset($argv[1]) or !isset($argv[2]) or !isset($argv[2]) or !isset($AVAILABLE_LANGUAGES[$argv[2]])){
