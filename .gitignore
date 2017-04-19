@@ -3,11 +3,11 @@ configuration.local.php
 
 .DS_Store
 
-dependences/vendor
-dependences/composer.phar
+behistun/dependences/vendor
+behistun/dependences/composer.phar
 
-dependencies/vendor
-dependencies/composer.phar
+behistun/dependencies/vendor
+behistun/dependencies/composer.phar
 
 nbproject
 
