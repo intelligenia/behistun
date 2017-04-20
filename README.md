@@ -6,34 +6,7 @@ PHP 5.4 and dependencies installed by [composer](https://getcomposer.org/) ([Ado
 
 # Installation
 
-## Install from master branch
-
-```json
-{
-     "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "intelligenia/behistun",
-                "version": "1.0",
-                "source": {
-                    "url": "https://github.com/intelligenia/behistun.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        }
-    ],
-    "require": {
-        "twig/twig": "1.32",
-        "intelligenia/behistun": "1.0"
-    }
-}
-```
-
-## Packagist
-
-Or wait until we upload this package to packagist and you'll be able to do:
+Install from packagist typing:
 
 ```sh
 composer install
