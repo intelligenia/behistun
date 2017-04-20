@@ -17,6 +17,6 @@
         "twig/twig": "1.32"
     },
     "autoload": {
-        "files": ["vendor/intelligenia/behistun/behistun/init.php"]
+       "files": ["behistun/init.php"]
     }
 }
